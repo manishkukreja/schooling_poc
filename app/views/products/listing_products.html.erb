@@ -1,0 +1,19 @@
+<table>
+</br><b>New Products!</b>
+   <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><b><%=  link_to product.title, product %></b></br>
+          description: <%= product.description %> </br>
+          price:<%= product.price %>
+          <%= button_to "Add to Cart" %>
+        ------------------------------------------------------
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Product', new_product_path %>

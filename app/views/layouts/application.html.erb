@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schooling POC</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= link_to "Home", root_path %>
+<%= link_to "New Batches"%> 
+<%= link_to "Trainings Offered"%>
+<%= link_to "New Trainings", listing_products_products_path %>
+<%= link_to "Careers" %>
+<%= yield %>
+</br><center> 
+<%= link_to "Home" %> | 
+<%= link_to "New Batches" %> | 
+<%= link_to "Trainings Offered" %> | 
+<%= link_to "New Trainings", listing_products_products_path %> | 
+<%= link_to "Our Trainers" %> | 
+<%= link_to "Careers" %> | 
+<%= link_to "Partners" %> | 
+<%= link_to "Contact Us" %>
+</br>Copyright 2013. All Rights Reserved. Schooling IT </center>
+</body>
+</html>

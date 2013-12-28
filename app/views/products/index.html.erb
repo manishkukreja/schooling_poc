@@ -1,0 +1,41 @@
+<h1>Welcome to our learning center!</h1>
+
+Welcome to Online Training ! Would you like to log yourself in? Or would you prefer to create an account? </br>
+We are one of the leading online e-learning solutions provider for the courses ranging from SAP to Oracle, from Cold Fusion to Symbian administration. Our extensive list of courses include Lotus Notes and Domino System Administrator, Microsoft.Net technologies, java, Crystal reports and SQL DBA. What more you can take these courses from the comforts of your home, buy them, download them and learn them at your own pace.We also offer affordable packages for bulk downloads of our courses. .</br>
+
+We build learning programmes using a broad collection of online trainings, e-Learning, classroom materials, Virtual Lab Environment and Self Learning Kit that drive business results. Our online courses are majorly focused towards Oracle Products and technologies. We design world’s best learning environment includes virtual Lab and Self Learning Kit to give our customer a unique learning experience. We partner with clients to design and develop custom learning programmes.</br>
+
+Online delivers Training Solutions through custom branded learning portals with our learning management system, or can host e-Learning courses via our various training Server. We also offer worldwide classroom materials fulfilment, and support services. Find out how you can maximise your investment in learning Online.
+ 
+<table>
+</br><b>Trainings offered in:</b>
+  <!-- <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Image url</th>
+      <th>Price</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+ -->
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.title %></td>
+        <!-- <td><%= product.description %></td>
+        <td><%= product.image_url %></td>
+        <td><%= product.price %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%- link_to 'New Product', new_product_path %>
